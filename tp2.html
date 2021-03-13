@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+</head>
+<body>
+
+    <input id="text"type="text">
+    <input id="colorrr" type="color" value="#FF0000">
+    <select name="font" id="font">
+        <option value="ariel">ariel</option>
+        <option value="courier">courier</option>
+        <option value="helvetica">helvetica</option>
+      </select>
+      <input type="number" id="size"  value="20">
+      <input type="submit">
+<script>
+        var text=document.getElementById("text");
+        text.style.color="red"
+        text.style.fontSize="20px"
+        document.getElementById("colorrr").addEventListener("change", (e)=>{
+  text.style.color = e.target.value;
+        });
+        document.getElementById("font").addEventListener("change", (e)=>{
+  text.style.fontFamily=e.target.value;
+        });
+        document.getElementById("size").addEventListener("change", (e)=>{
+  text.style.fontSize=e.target.value+"px";
+  20
+        });
+
+
+
+    </script>
+</body>
+</html>
